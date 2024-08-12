@@ -65,9 +65,12 @@ function App() {
                 <p>Title: {jobDetails[job]?.title}</p>
                 <p>By: {jobDetails[job]?.by}</p>
                 <p>
-                  Link: <a href={jobDetails[job]?.url}>Link</a>
+                  Link:{" "}
+                  <a target="_blank" href={jobDetails[job]?.url}>
+                    Link
+                  </a>
                 </p>
-                <hr/>
+                <hr />
               </>
             ) : (
               "Loading..."
